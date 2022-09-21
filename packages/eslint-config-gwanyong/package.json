@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-gwanyong",
+  "name": "@gwanyong/eslint-config-gwanyong",
   "version": "2.0.0",
   "main": "index.js",
   "repository": "https://github.com/gwanyong/monorepo-starter",
