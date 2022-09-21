@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-gwanyong",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "main": "index.js",
   "repository": "https://github.com/gwanyong/monorepo-starter",
   "license": "MIT",
@@ -11,4 +11,3 @@
     "eslint-config-turbo": "latest"
   }
 }
-
