@@ -1,5 +1,5 @@
 {
-  "name": "@acme/tsconfig",
+  "name": "@gwanyong/tsconfig",
   "version": "1.0.0",
   "private": true,
   "repository": "https://github.com/gwanyong/monorepo-starter",
