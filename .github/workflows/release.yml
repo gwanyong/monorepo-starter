@@ -20,14 +20,17 @@ jobs:
         with:
           node-version: 16.x
 
+      - name: npm ls
+        run: npm config ls -l
+
       - name: Install Dependencies
-        run: yarn install
+        run: npm install
 
       - name: Creating .npmrc
         run: |
           cat << EOF > "$HOME/.npmrc"
-         	@gwanyong:registry=https://npm.pkg.github.com
-           	//npm.pkg.github.com/:_authToken=$MONO_STARTER
+            @gwanyong:registry=https://npm.pkg.github.com
+            //npm.pkg.github.com/:_authToken=$MONO_STARTER
           EOF
         env:
           MONO_STARTER: ${{ secrets.MONO_STARTER }}
@@ -36,8 +39,6 @@ jobs:
         id: changesets
         uses: changesets/action@v1
         with:
-          # This expects you to have a script called release which does a build for your packages and calls changeset publishs
           publish: npm run release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
