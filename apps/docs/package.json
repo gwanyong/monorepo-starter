@@ -1,5 +1,5 @@
 {
-  "name": "@acme/docs",
+  "name": "@gwanyong/docs",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -9,7 +9,7 @@
     "clean": "rm -rf .turbo && rm -rf node_modules"
   },
   "dependencies": {
-    "@acme/core": "*",
+    "@gwanyong/core": "*",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
   },

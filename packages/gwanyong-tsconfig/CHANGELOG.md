@@ -1,4 +1,4 @@
-# @acme/tsconfig
+# @gwanyong/tsconfig
 
 ## 1.0.0
 
