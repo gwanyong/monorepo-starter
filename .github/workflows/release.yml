@@ -28,9 +28,9 @@ jobs:
           cat << EOF > "$HOME/.npmrc"
          	@gwanyong:registry=https://npm.pkg.github.com
            	//npm.pkg.github.com/:_authToken=$MONO_STARTER
-            EOF
-          env:
-            MONO_STARTER: ${{ secrets.MONO_STARTER }}
+          EOF
+        env:
+          MONO_STARTER: ${{ secrets.MONO_STARTER }}
 
       - name: Create Release Pull Request or Publish to npm
         id: changesets
